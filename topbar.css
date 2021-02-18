@@ -19,7 +19,6 @@ root: {
   padding: 0;
   list-style: none;
   text-decoration: none;
-  font-family: 'Noto Sans JP', sans-serif;
 }
 
 .headertop {
@@ -38,8 +37,6 @@ root: {
 
 .headertop ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0;
@@ -47,7 +44,7 @@ root: {
 }
 
 .headertop ul li {
-  box-sizing: border-box;
+  display: inline-block;
   position: relative;
   padding: 0px 10px;
   line-height: 70px;
@@ -56,28 +53,36 @@ root: {
 }
 
 .headertop ul li a {
+  display: block;
   text-decoration: none;
   text-transform: uppercase;
-
+  font-family: 'Noto Sans JP', sans-serif;
   color: white;
 }
 
 .headertop ul li ul {
+  background-color: #212329;
   position: absolute;
-  top: 39px;
-  left: 0;
-  background: #605a56;
-  display: block;
-  width: 200px;
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+  top: 70px;
+  display: block;
+  width: 250px;
+
 }
-  .headertop ul li:hover ul {
+
+.headertop ul li ul li a {
+}
+
+.headertop ul li:hover ul {
+    opacity: 1;
     visibility: visible;
   }
 
   .headertop ul li ul li {
   }
+
 
 /* Mobile triggering */
 
