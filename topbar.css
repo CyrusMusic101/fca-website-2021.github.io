@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap');
+root: {
+  /* This is where the color codes in the project are kept */
+  --white: #fff;
+  --darkgray: #212329;
+  --black: #000000;
+  --black2: #2B2828;
+
+
+  /* NOTE: PROJECT NOTES AND TODO
+  TODO: REDESIGN text
+  TODO: MOBILE menu NOTE: ADD THE X
+  TODO: FINISH dropdown menu and design
+  */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.headertop {
+  background-color: #212329;
+  height: 70px;
+  width: 100%;
+}
+
+.header_logo {
+  justify-content: center;
+  position: absolute;
+  top: -70px;
+  width: 300px;
+  left: 5px;
+}
+
+.headertop ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+  float: right;
+}
+
+.headertop ul li {
+  box-sizing: border-box;
+  position: relative;
+  padding: 0px 10px;
+  line-height: 70px;
+  left: -10px;
+  justify-content: center;
+}
+
+.headertop ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: white;
+}
+
+.headertop ul li ul {
+  position: absolute;
+  top: 39px;
+  left: 0;
+  background: #605a56;
+  display: block;
+  width: 200px;
+  opacity: 0;
+  visibility: hidden;
+}
+  .headertop ul li:hover ul {
+    visibility: visible;
+  }
+
+  .headertop ul li ul li {
+  }
+
+/* Mobile triggering */
+
+  #mobileTrigger {
+    display: none;
+  }
